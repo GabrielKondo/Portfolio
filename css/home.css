@@ -1,0 +1,137 @@
+/* Geral */
+
+.home__pagina {
+    height: 100vh;
+}
+
+.home__container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__gif {
+    width: 85vw;
+}
+
+.home__rodape {
+    width: 100%;
+    display: grid;
+    margin-top: 1vh;
+    z-index: 2;
+}
+
+.home__titulo {
+    font-size: 25px;
+    font-family: var(--fonte-source);
+}
+
+.home__link {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.home__seta {
+    width: 50px;
+}
+
+/* cabecalho */
+
+.home {
+    font-family: var(--fonte-playfair);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home__logo {
+    font-size: clamp(1.88rem, calc(1.15rem + 3.21vw), 5.00rem);
+    position: fixed;
+}
+
+.home__logo__seta {
+    margin-top: 80vh;
+}
+
+/* Projects */
+
+.home__project__rodape {
+    grid-template-columns: 80% auto;
+}
+
+.home__project__rodape {
+    grid-column: 1;
+    text-align: end;
+}
+
+.home__project__seta, .home__ca__seta__direita {
+    grid-column: 2;
+    rotate: 270deg;
+    transition: all 0.5s;
+}
+
+.home__project__rodape:hover .home__project__seta {
+    margin-left: 30px;
+}
+
+/* Drops */
+.home__drops__rodape {
+    grid-template-columns: auto 80%;
+}
+
+.home__drops__seta, .home__ca__seta__esquerda {
+    rotate: 90deg;
+    transition: all 0.5s;
+    justify-self: end;
+}
+
+.home__drops__rodape:hover .home__drops__seta {
+    margin-right: 30px;
+}
+
+/* Contact About */
+
+.home__ca {
+    flex-direction: row;
+}
+
+.home__about, .home__contact {
+    margin-top: 15vw;
+}
+
+.home__about {
+    grid-template-columns: 40% auto;
+}
+
+.home__contact {
+    grid-template-columns: auto 40%;
+    text-align: end;
+}
+
+.home__about:hover .home__ca__seta__esquerda {
+    margin-right: 30px;
+}
+
+.home__contact:hover .home__ca__seta__direita {
+    margin-left: 30px;
+}
+
+@media screen and (min-width: 1280px) {
+    .home__project__gif {
+        width: 45vw;
+        align-self: flex-end;
+        margin-right: 3vw;
+    }
+
+    .home__drops__gif {
+        width: 45vw;
+        align-self: flex-start;
+        margin-left: 6vw;
+    }
+}

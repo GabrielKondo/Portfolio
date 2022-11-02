@@ -1,0 +1,91 @@
+section {
+    height: 100vh;
+}
+
+/* Cabecalho */
+
+.carol__cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carol__logo {
+    font-size: clamp(2.00rem, calc(0.31rem + 7.50vw), 3.13rem);
+    position: relative;
+    margin-top: auto;
+}
+
+.carol__seta {
+    width: 50px;
+    margin-top: auto;
+    z-index: 2;
+}
+
+/* Geral */
+
+.carol__retrato {
+    height: 360px;
+}
+
+.carol__paisagem {
+    width: 360px;
+}
+
+.carol__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.carol__foto {
+    margin-top: 2vh;
+}
+
+.carol__texto {
+    font-family: var(--fonte-source);
+    font-size: 16px;
+    text-align: center;
+    margin: auto 1vw;
+}
+
+@media screen and (min-width: 600px) {
+    .carol__retrato {
+        height: 600px;
+    }
+    
+    .carol__paisagem {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .carol__texto {
+        font-size: 20px;
+    }
+    
+    .carol__retrato {
+        height: 90vh;
+    }
+    
+    .carol__paisagem {
+        width: 90vh;
+    }
+
+    .carol__foto {
+        margin: auto;
+    }
+
+    .carol__texto {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .carol__texto {
+        font-size: 24px;
+    }
+}

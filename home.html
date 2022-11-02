@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/variaveis.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/home.css">
+
+    <title>Home</title>
+</head>
+<body>
+    <div class="menu">Menu</div>
+
+    <nav>
+        <div id="block__01" class="block__reveal"></div>
+        <div id="block__02" class="block__reveal"></div>
+        <div id="block__03" class="block__reveal"></div>
+        <div id="block__04" class="block__reveal"></div>
+        
+        <div class="nav__container">
+        <ul class="nav__container__link">
+            <li class="nav__link"><a href="./home.html" class="nav__link__hover">Home</a></li>
+            <li class="nav__link"><a href="./project.html" class="nav__link__dorpdown"> Projects</a></li>
+            <ul class="nav__dropdown">
+                <li class="nav__dropdown_item"><a href="./carol.html" class="nav__dropdown_link">Carol-80</a></li>
+                <li class="nav__dropdown_item"><a href="./pwm.html" class="nav__dropdown_link">Playing with myself</a></li>
+                <li class="nav__dropdown_item"><a href="./nihon.html" class="nav__dropdown_link">Nihon</a></li>
+            </ul>
+            <li class="nav__link"><a href="./drops.html" class="nav__link__hover">Drops</a></li>
+            <li class="nav__link"><a href="./about.html" class="nav__link__hover">About</a></li>
+            <li class="nav__link"><a href="./contact.html" class="nav__link__hover">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script><script  src="./js/script.js"></script>
+
+    <div class="home">
+        <h1 class="home__logo">Gabriel Kondo</h1>
+        <img src="./img/Arrow-down.svg.png" alt="seta para baixo" class="home__seta home__logo__seta">
+    </div>
+
+    <section class="home__pagina home__project__altura">   
+        <div class="home__container home__project">
+            <img src="./img/Gifs/home-2x1.gif" alt="gif de fotos dos albuns dos projectos" class="home__gif home__project__gif">
+            <div class="home__rodape home__project__rodape">
+                <h3 class="home__titulo home__project__titulo"><a href="./project.html" class="home__link home__project__link">Projects</a></h3>
+                <img src="./img/Arrow-down.svg.png" alt="seta para direita" class="home__seta home__project__seta">
+            </div>
+        </div>
+    </section>
+
+    <section class="home__pagina home__drops__altura">
+        <div class="home__container home__drops">
+            <img src="./img/Gifs/drops__gif.gif" alt="gif de fotos do album drops" class="home__gif home__drops__gif">
+            <div class="home__rodape home__drops__rodape">
+                <img src="./img/Arrow-down.svg.png" alt="seta para esquerda" class="home__seta home__drops__seta">
+                <h3 class="home__titulo home__drops__titulo"><a href="./drops.html" class="home__link home__drops__link">Drops</a></h3>
+            </div>
+        </div>
+    </section>
+    
+    <section class="home__pagina home__ca__altura">
+        <div class="home__container home__ca">
+            <div class="home__rodape home__ca home__about">
+                <img src="./img/Arrow-down.svg.png" alt="seta para esquerda" class="home__seta home__ca__seta__esquerda">
+                <h3 class="home__titulo home__ca__titulo"><a href="./about.html" class="home__link home__ca__link">About</a></h3>
+            </div>
+            <div class="home__rodape home__ca home__contact">
+                <h3 class="home__titulo home__ca__titulo"><a href="./contact.html" class="home__link home__ca__link">Contact</a></h3>
+                <img src="./img/Arrow-down.svg.png" alt="seta para direita" class="home__seta home__ca__seta__direita">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

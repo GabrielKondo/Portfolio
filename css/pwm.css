@@ -1,0 +1,91 @@
+section {
+    height: 100vh;
+}
+
+/* Cabecalho */
+
+.pwm__cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pwm__logo {
+    font-size: clamp(2.00rem, calc(0.31rem + 7.50vw), 3.13rem);
+    position: relative;
+    margin-top: auto;
+}
+
+.pwm__seta {
+    width: 50px;
+    margin-top: auto;
+    z-index: 2;
+}
+
+/* Geral */
+
+.pwm__retrato {
+    height: 360px;
+}
+
+.pwm__paisagem {
+    width: 360px;
+}
+
+.pwm__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pwm__foto {
+    margin-top: 2vh;
+}
+
+.pwm__texto {
+    font-family: var(--fonte-source);
+    font-size: 16px;
+    text-align: center;
+    margin: auto 1vw;
+}
+
+@media screen and (min-width: 600px) {
+    .pwm__retrato {
+        height: 600px;
+    }
+    
+    .pwm__paisagem {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .pwm__texto {
+        font-size: 20px;
+    }
+    
+    .pwm__retrato {
+        height: 90vh;
+    }
+    
+    .pwm__paisagem {
+        width: 90vh;
+    }
+
+    .pwm__foto {
+        margin: auto;
+    }
+
+    .pwm__texto {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .pwm__texto {
+        font-size: 24px;
+    }
+}

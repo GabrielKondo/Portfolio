@@ -1,0 +1,124 @@
+.nav__container__link, .menu {
+  color: #707070;
+  font-family: var(--fonte-source);
+  font-size: 30px;
+  font-weight: var(--peso-bold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+body {
+  background: #FFFAFA;
+  font-family: var(--fonte-playfair);
+}
+
+nav {
+  width: 100vw;
+  z-index: 1;
+  position: fixed;
+}
+
+.menu {
+  border-radius: 30px;
+  cursor: pointer;
+  position: fixed;
+  padding: 4vh 6vw;
+  z-index: 100;
+}
+
+.block {
+  background: transparent;
+  height: 98vh;
+  width: 25%;
+}
+.block:last-child {
+  border-right: none;
+}
+
+.block__reveal {
+  background: #313131;
+  height: 100vh;
+  opacity: 95%;
+  position: absolute;
+}
+
+#block__01 {
+  right: 0%;
+}
+
+#block__02 {
+  right: 25%;
+}
+
+#block__03 {
+  right: 50%;
+}
+
+#block__04 {
+  right: 75%;
+}
+
+.nav__container {
+  height: 100vh;
+  left: 25%;
+  position: absolute;
+  text-align: center;
+  width: 50%;
+}
+.nav__container__link {
+  align-items: center;
+  color: #FFFAFA;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  height: 100%;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__container ul li {
+  cursor: pointer;
+  padding: 20px 0;
+}
+
+.nav__link__hover {
+  color: #FFFAFA;
+  opacity: 50%;
+  text-decoration: none;
+}
+
+.nav__link__hover:hover {
+  opacity: 100%;
+}
+
+.nav__link__dorpdown {
+  color: var(--branco);
+  opacity: 50%;
+  text-decoration: none;
+}
+
+.nav__dropdown {
+  font-size: 15px;
+  font-style: italic;
+  height: 0;
+  list-style: none;
+  overflow-y: hidden;
+  padding: 0;
+  transition: height 1s ease-in-out;
+}
+
+.nav__dropdown_link {
+  color: var(--branco);
+  opacity: 50%;
+  text-decoration: none;
+}
+
+.nav__dropdown_link:hover {
+  opacity: 100%;
+}
+
+.nav__link__dorpdown:hover {
+  opacity: 100%;
+}

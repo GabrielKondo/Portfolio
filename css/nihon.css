@@ -1,0 +1,91 @@
+section {
+    height: 100vh;
+}
+
+/* Cabecalho */
+
+.nihon__cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nihon__logo {
+    font-size: clamp(2.00rem, calc(0.31rem + 7.50vw), 3.13rem);
+    position: relative;
+    margin-top: auto;
+}
+
+.nihon__seta {
+    width: 50px;
+    margin-top: auto;
+    z-index: 2;
+}
+
+/* Geral */
+
+.nihon__retrato {
+    height: 360px;
+}
+
+.nihon__paisagem {
+    width: 360px;
+}
+
+.nihon__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nihon__foto {
+    margin-top: 2vh;
+}
+
+.nihon__texto {
+    font-family: var(--fonte-source);
+    font-size: 16px;
+    text-align: center;
+    margin: auto 1vw;
+}
+
+@media screen and (min-width: 600px) {
+    .nihon__retrato {
+        height: 600px;
+    }
+    
+    .nihon__paisagem {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .nihon__texto {
+        font-size: 20px;
+    }
+    
+    .nihon__retrato {
+        height: 90vh;
+    }
+    
+    .nihon__paisagem {
+        width: 90vh;
+    }
+
+    .nihon__foto {
+        margin: auto;
+    }
+
+    .nihon__texto {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .nihon__texto {
+        font-size: 24px;
+    }
+}

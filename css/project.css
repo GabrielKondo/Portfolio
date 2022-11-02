@@ -1,0 +1,186 @@
+section {
+    height: 100vh;
+}
+
+.project__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project__head {
+    display: grid;
+    padding-bottom: 1rem;
+}
+
+.project__titulo {
+    font-family: var(--fonte-source);
+    font-weight: var(--peso-bold);
+    font-size: 30px;
+    justify-self: flex-end;
+    z-index: 2;
+}
+
+.project__texto {
+    overflow-wrap: break-word;
+    width: 90%;
+    font-family: var(--fonte-source);
+}
+
+.project__seta {
+    width: 50px;
+    rotate: 270deg;
+    transition: all 0.5s;
+}
+
+.project__head:hover .project__seta{
+    margin-left: 30px;
+}
+
+.project__link {
+    text-decoration: none;
+    color: var(--preto);
+    z-index: 2;
+}
+
+/* Cabecalho */
+
+.projects {
+    font-family: var(--fonte-playfair);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.projects__logo {
+    font-size: clamp(2.00rem, calc(0.31rem + 7.50vw), 3.13rem);
+    position: relative;
+    margin-top: auto;
+}
+
+.projects__seta {
+    width: 50px;
+    margin-top: auto;
+    z-index: 2;
+}
+
+/* Carol */
+
+.project__gif__carol {
+    height: 22.5rem;
+    padding-bottom: 1rem;
+}
+
+.project__carol__head {
+    grid-template-columns: 60% auto;
+}
+
+/* Playing with myself */
+
+.project__gif__pwm {
+    width: 22.5rem;
+}
+
+.project__pmw__head {
+    grid-template-columns: 90% auto;
+} 
+
+/* Nihon */
+
+.project__gif__nihon {
+    width: 100vw;
+}
+
+.project__nihon__head {
+    grid-template-columns: 60% auto;
+}
+
+@media screen and (min-width: 600px) {
+    .project__carol {
+        display: grid;
+        grid-template-areas: 
+        "titulo gif"
+        "texto gif";
+    }
+
+    .project__carol__head {
+        grid-area: titulo;
+        align-self: flex-end;
+    }
+
+    .project__gif__carol {
+        grid-area: gif;
+        height: 28.125rem;
+        margin-right: 3vw;
+    }
+
+    .project__texto__carol {
+        grid-area: texto;
+        align-self: flex-start;
+        justify-self: center;
+    }
+
+    .project__pwm, .project__nihon {
+        display: grid;
+        grid-template-areas: 
+        "gif"
+        "titulo"
+        "texto";
+        grid-template-rows: 2fr auto 1fr;
+    }
+
+    .project__pmw__head, .project__nihon__head {
+        grid-area: titulo;
+        justify-self: center;
+    }
+
+    .project__gif__pwm, .project__gif__nihon {
+        grid-area: gif;
+        width: 28.125rem;
+        align-self: flex-end;
+        justify-self: center;
+        padding-bottom: 1rem;
+    }
+
+    .project__texto__pwm, .project__texto__nihon {
+        grid-area: texto;
+        align-self: flex-start;
+        justify-self: center;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .project__texto {
+        font-size: 20px;
+        width: 60%;
+    }
+
+    .project__gif__pwm, .project__gif__nihon {
+        width: 46.875rem;
+        padding-top: 3rem;
+    }
+
+    .project__gif__carol {
+        height: 46.875rem;
+        margin-right: 10vw;
+    }
+
+    .project__carol__head {
+        grid-template-columns: 50% auto;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .project__gif__pwm, .project__gif__nihon {
+        width: 62.5rem;
+        margin-top: 3rem;
+    }
+
+    .project__gif__carol {
+        height: 62.5rem;
+        margin-right: 10vw;
+    }
+}

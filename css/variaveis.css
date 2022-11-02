@@ -1,0 +1,17 @@
+:root {
+    --verde: #D3E4CD;
+    --cinza: #707070;
+    --preto: #313131;
+    --branco: #FFFAFA;
+
+    --fonte-playfair: 'Playfair Display SC', serif;
+    --fonte-source: 'Source Sans Pro', sans-serif;
+
+    --peso-regular: 400;
+    --peso-semi-bold: 600;
+    --peso-bold: 700;
+}
+
+img {
+    pointer-events: none;
+}
